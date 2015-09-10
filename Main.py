@@ -34,7 +34,7 @@ if __name__ == "__main__":
 	parser=argparse.ArgumentParser()
 	parser.add_argument("--path", default=os.getcwd(), dest="trackPath", type=str,
 		help="Set the path where the music files are located (for multiple, sep by ',')")
-	parser.add_argument("--host", default="127.0.0.1", dest="host", type=str,
+	parser.add_argument("--host", default="localhost", dest="host", type=str,
 		help="Specify the host the server should bind to.")
 	parser.add_argument("--port", default=8000, dest="port", type=int,
 		help="Specify the port the server should bind to.")
