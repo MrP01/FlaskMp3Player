@@ -19,6 +19,7 @@ class Player(object):
 
 	def playTrack(self, trackPath):
 		self.stopPlaying()
+		#This is a comment
 		self.currentProcess=subprocess.Popen(["mpg321", trackPath], stdout=subprocess.PIPE,
 			stderr=subprocess.PIPE, stdin=subprocess.PIPE)
 
