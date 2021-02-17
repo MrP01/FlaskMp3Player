@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <p>[Stop current Track: <a href="stopPlaying">Click here</a>]</p>
+  <p>[Stop current Track: <a href="/tracks/stopPlaying">Click here</a>]</p>
   <h1>Available Tracks:</h1>
   {% for trackName in tracks %}
-    <p><a href="{{ trackName }}">{{ trackName }}</a></p>
+    <p><a href="/tracks/{{ trackName }}">{{ trackName }}</a></p>
   {% endfor %}
 {% endblock %}
